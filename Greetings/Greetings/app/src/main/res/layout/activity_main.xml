@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <!-- Christmas Icon -->
+    <ImageView
+        android:id="@+id/imgTree"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@android:drawable/star_big_on"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <!-- Greeting -->
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎄 Merry Xmas Ma, Pa 🎄"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/imgTree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maligayang Pasko po sa inyo, Mama at Papa. Nawa’y pagpalain pa kayo ng Diyos ng mabuting kalusugan, kapayapaan, at mahabang buhay. Maraming salamat po sa lahat ng inyong ginawa at patuloy na ginagawa para sa ating pamilya."
+        android:textSize="18sp"
+        android:textColor="#E0F7FA"
+        android:gravity="center"
+        android:layout_below="@id/txtGreeting"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <!-- Initial Text -->
+    <TextView
+        android:id="@+id/txtInitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Holidays!"
+        android:textSize="22sp"
+        android:textColor="#E6E6FA"
+        android:layout_centerInParent="true"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnAnimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="press this button"
+        android:layout_below="@id/txtInitial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1A237E"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
